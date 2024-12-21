@@ -7,9 +7,6 @@ import Components from 'unplugin-vue-components/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  server: {
-    port: 9999,
-  },
   css: ['~/assets/css/tailwind.css'],
   modules: ['@vueuse/motion/nuxt', 'nuxtjs-naive-ui'],
   postcss: {
