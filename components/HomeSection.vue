@@ -9,11 +9,6 @@
       <p class="text-xl mb-8">
         Explore creative designs, impactful projects, and innovative solutions.
       </p>
-      <n-button round type="primary" size="large" href="#work"
-        class="bg-yellow-500 hover:bg-yellow-600 text-white shadow-lg transform transition-transform duration-300 hover:scale-105">
-        Get Started
-      </n-button>
-
     </div>
   </section>
 </template>
