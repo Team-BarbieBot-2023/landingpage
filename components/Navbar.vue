@@ -1,7 +1,8 @@
 <template>
-  <nav class="px-6 py-4 flex justify-between items-center shadow-lg sticky top-0 z-50">
+  <nav class="px-6 py-4 flex justify-between items-center shadow-lg sticky top-0 z-50 bg-[#0f1d3bf2]">
     <h1 class="text-xl font-bold text-white">My Landing Page</h1>
 
+    <!-- Hamburger Menu Button -->
     <button
       @click="toggleMenu"
       class="lg:hidden text-white focus:outline-none"
@@ -32,14 +33,11 @@
     </button>
 
     <ul
-      :class="[
-        'lg:flex lg:space-x-8',
-        isMenuOpen ? 'block' : 'hidden',
-        'lg:block'
-      ]"
-      class="bg-[#0f1d3bf2] absolute lg:static top-16 left-0 right-0 bg-primary-light lg:bg-transparent text-white p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none transition-all"
+      :class="[ 'lg:flex lg:space-x-8', isMenuOpen ? 'block' : 'hidden', 'lg:block' ]"
+      class="absolute lg:static top-16 left-0 right-0 bg-primary-light lg:bg-transparent text-white p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none transition-all"
     >
-      <li>
+      <li class="flex items-center">
+        <i class="fas fa-home text-lg"></i>
         <button
           @click="scrollToSection('home')"
           class="block lg:inline-block py-2 px-4 rounded-md hover:bg-primary-dark hover:text-yellow-400 transition"
@@ -47,7 +45,8 @@
           Home
         </button>
       </li>
-      <li>
+      <li class="flex items-center">
+        <i class="fas fa-briefcase text-lg"></i>
         <button
           @click="scrollToSection('work')"
           class="block lg:inline-block py-2 px-4 rounded-md hover:bg-primary-dark hover:text-yellow-400 transition"
@@ -55,7 +54,8 @@
           Work
         </button>
       </li>
-      <li>
+      <li class="flex items-center">
+        <i class="fas fa-user text-lg"></i>
         <button
           @click="scrollToSection('about')"
           class="block lg:inline-block py-2 px-4 rounded-md hover:bg-primary-dark hover:text-yellow-400 transition"
@@ -63,7 +63,8 @@
           About
         </button>
       </li>
-      <li>
+      <li class="flex items-center">
+        <i class="fas fa-envelope text-lg"></i>
         <button
           @click="scrollToSection('contact')"
           class="block lg:inline-block py-2 px-4 rounded-md hover:bg-primary-dark hover:text-yellow-400 transition"
@@ -95,7 +96,6 @@ function scrollToSection(id: string) {
 
 <style scoped>
 nav {
-  background-color: #0f1d3bf2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -103,16 +103,8 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button div.rotate-90 {
-  transform: rotate(90deg);
-}
-
-nav {
-  background-color: #0f1d3bf2;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-button {
-  transition: background-color 0.3s ease, color 0.3s ease;
+li {
+  display: flex;
+  align-items: center;
 }
 </style>

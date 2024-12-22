@@ -10,6 +10,8 @@
 </template>
 
 <script setup lang="ts">
+import '@fortawesome/fontawesome-free/css/all.css';
+
 import Navbar from './components/Navbar.vue';
 import HomeSection from './components/HomeSection.vue';
 import AboutSection from './components/AboutSection.vue';
