@@ -20,8 +20,9 @@
             dynamic job management.
           </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 p-4 lg:w-1/2">
-          <img src="/imgs/3.webp" alt="Dynamic Systems" class="rounded-lg object-cover col-span-2 shadow-md" />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <img src="/imgs/3.webp" alt="Dynamic Systems"
+            class="rounded-lg object-cover col-span-2 shadow-md w-[80%] h-[80%] m-auto" />
         </div>
       </div>
 

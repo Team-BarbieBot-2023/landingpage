@@ -34,7 +34,7 @@
 
     <ul
       :class="[ 'lg:flex lg:space-x-8', isMenuOpen ? 'block' : 'hidden', 'lg:block' ]"
-      class="absolute lg:static top-16 left-0 right-0 bg-primary-light lg:bg-transparent text-white p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none transition-all"
+      class="bg-[#0f1d3bf2] absolute lg:static top-16 left-0 right-0 bg-primary-light lg:bg-transparent text-white p-6 lg:p-0 rounded-lg shadow-lg lg:shadow-none transition-all"
     >
       <li class="flex items-center">
         <i class="fas fa-home text-lg"></i>
